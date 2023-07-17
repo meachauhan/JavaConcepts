@@ -2,6 +2,27 @@
 enum Status{
     Running,Failed,Pending,Success;
 }
+//Enum Class
+enum Laptops{
+    Macbook(2000),Xps(2200),Surface(2100),Thinkpad(1900);
+
+    private int price;
+
+    private Laptops(int price){
+        this.price=price;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+    
+
+
+}
 public class  Enums{
     public static void main(String[] args) {
         int i=5;
@@ -38,6 +59,14 @@ public class  Enums{
                 break;
             default:
                 System.out.println("Done!");
+        }
+
+        //Enums Class Uses
+        Laptops m=Laptops.Macbook;
+        System.out.println(m+":"+ m.getPrice());
+
+        for(Laptops l: Laptops.values()){
+            System.out.println(l+":"+ l.getPrice());
         }
 
     }
