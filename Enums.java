@@ -14,5 +14,31 @@ public class  Enums{
             System.out.println(ss);
         }
 
+        //Comparion of Enums
+
+        if(s==Status.Running)
+            System.out.println("All good");
+        else if(s==Status.Failed)
+            System.out.println("Try Again");
+        else if(s==Status.Pending)
+            System.out.println("Please Wait...");
+        else 
+            System.out.println("Done!");
+
+        //Switch Suppors Enum
+        switch(s){
+            case Running:
+                System.out.println("All good!");
+                break;
+            case Failed:
+                System.out.println("Try Again.");
+                break;
+            case Pending:
+                System.out.println("Please Wait..." );
+                break;
+            default:
+                System.out.println("Done!");
+        }
+
     }
 }
