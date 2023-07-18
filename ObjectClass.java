@@ -56,7 +56,7 @@ public class ObjectClass{
 
         Laptops obj1=new Laptops();
 
-        obj1.model="Lenevo";
+        obj1.model="Avita";
         obj1.price=32000;
 
 
